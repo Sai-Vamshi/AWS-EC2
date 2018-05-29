@@ -18,23 +18,27 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ### YellowAnt specific settings ###
 # URL to obtain oauth2 access for a YA user
 YA_OAUTH_URL = "https://www.yellowant.com/api/oauth2/authorize/"
-# URL to receive oauth2 codes from YA for user authentication. As a developer, you need to provide this URL in the YA
+# URL to receive oauth2 codes from YA for user authentication. As a developer,
+# you need to provide this URL in the YA
 # developer console so that YA knows exactly where to send the oauth2 codes.
-YA_REDIRECT_URL = "http://f402f1ed.ngrok.io/yellowant-oauth-redirect/"
+YA_REDIRECT_URL = "http://efac5c8a.ngrok.io/yellowant-oauth-redirect/"
 
 # Numerical ID generated when you register your application through the YA developer console
 YA_APP_ID = os.environ.get("YA_APP_ID", 348)
-# Client ID generated from the YA developer console. Required to identify requests from this application to YA
+# Client ID generated from the YA developer console. Required to identify
+# requests from this application to YA
 YA_CLIENT_ID = os.environ.get("YA_CLIENT_ID", "3cIijKwJHrjsxp1ghi7fo2eDPEsUIh1PMBqtnPPD")
-# Client secret generated from the YA developer console. Required to identify requests from this application to YA
+# Client secret generated from the YA developer console. Required to identify requests
+# from this application to YA
 YA_CLIENT_SECRET = os.environ.get("YA_CLIENT_SECRET", "fE3nz5Y4Yth7KrOyg2iSpc5uxcdRZXzkPOwoUXEVoJgkwQS3AroC3IasnfqPJUSVJd2nQiItVB3zn6rhQ4i5DdV3S9wpdcm9HxyObPpuUmHloOyf2t94KlmFTJih1PuL")
-# Verification token generated from the YA developer console. This application can verify requests from YA as they will
+# Verification token generated from the YA developer console.
+# This application can verify requests from YA as they will
 # carry the verification token
 YA_VERIFICATION_TOKEN = os.environ.get("YA_VERIFICATION_TOKEN", "wX9t8ZLqFiBzkBdrmE91jZD3MWbxGM65sfs1344FmVz5x9KMgqjUsxU0oCxKuOgVoQhgWo0SyIeeyqJ4p4JnQhcV29jbiq8tt5mGNv8qzommMMpPRUcNRvSBW12yxXRx")
 
 ### END YellowAnt specific settings ###
 
-
+#AWS related keys Hardcoded in the settings page
 AWS_ACCESS_KEY = "AKIAISJT7LNTYNCRFHJA"
 AWS_ACCESS_SECRET = "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"
 # Quick-start development settings - unsuitable for production
@@ -54,7 +58,6 @@ ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
     'yellowant_api.apps.YellowantApiConfig',
-    'todo.apps.TodoConfig',
     'web',
     'django.contrib.admin',
     'django.contrib.auth',
