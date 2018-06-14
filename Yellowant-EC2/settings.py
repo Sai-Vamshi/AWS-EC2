@@ -21,7 +21,7 @@ YA_OAUTH_URL = "https://www.yellowant.com/api/oauth2/authorize/"
 # URL to receive oauth2 codes from YA for user authentication. As a developer,
 # you need to provide this URL in the YA
 # developer console so that YA knows exactly where to send the oauth2 codes.
-YA_REDIRECT_URL = "http://efac5c8a.ngrok.io/yellowant-oauth-redirect/"
+YA_REDIRECT_URL = "http://cefd30ff.ngrok.io/yellowant-oauth-redirect/"
 
 # Numerical ID generated when you register your application through the YA developer console
 YA_APP_ID = os.environ.get("YA_APP_ID", 348)
@@ -38,9 +38,6 @@ YA_VERIFICATION_TOKEN = os.environ.get("YA_VERIFICATION_TOKEN", "wX9t8ZLqFiBzkBd
 
 ### END YellowAnt specific settings ###
 
-#AWS related keys Hardcoded in the settings page
-AWS_ACCESS_KEY = "AKIAISJT7LNTYNCRFHJA"
-AWS_ACCESS_SECRET = "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"
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
@@ -53,12 +50,12 @@ DEBUG = True
 # SECURITY WARNING: remove wildcard condition from ALLOWED_HOSTS
 ALLOWED_HOSTS = ["*"]
 
-
+BASE_HREF = "/"
 # Application definition
 
 INSTALLED_APPS = [
-    'yellowant_api.apps.YellowantApiConfig',
-    'web',
+    'lib.yellowant_api',
+    'lib.web',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
