@@ -1,3 +1,4 @@
+lib/web/static/node_modules/*
 *.pyc
 __pycache__/
 */node_modules
