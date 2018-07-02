@@ -26,3 +26,4 @@ urllib3==1.21.1
 websocket-client==0.47.0
 whitenoise==3.3.1
 yellowant==0.0.29
+psycopg2
