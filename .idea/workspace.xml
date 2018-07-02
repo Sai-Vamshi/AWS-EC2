@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="447a3018-4efd-4956-8c34-56160e867fd8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Yellowant-EC2/urls_relative.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yellowant-EC2/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Yellowant-EC2/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yellowant-EC2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Yellowant-EC2/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yellowant-EC2/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Yellowant-EC2/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
@@ -29,14 +23,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="yellowant_app_credentials.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yellowant_app_credentials.json">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="yellowant_app.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yellowant_app.yaml">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
@@ -159,6 +161,7 @@
         <option value="$PROJECT_DIR$/Yellowant-EC2/urls_relative.py" />
         <option value="$PROJECT_DIR$/Yellowant-EC2/wsgi.py" />
         <option value="$PROJECT_DIR$/Yellowant-EC2/__init__.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -230,7 +233,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.37132353" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.37132353" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24977699" />
@@ -280,7 +283,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/static/config/webpack.dev.js" />
     <entry file="file://$PROJECT_DIR$/web/static/config/webpack.common.js" />
     <entry file="file://$PROJECT_DIR$/web/static/src/app/app.scss" />
     <entry file="file://$PROJECT_DIR$/web/static/src/app/screens/account-authorize/account-settings.controller.js" />
@@ -381,13 +383,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -452,6 +447,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
