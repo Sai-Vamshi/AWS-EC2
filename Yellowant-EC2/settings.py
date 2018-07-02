@@ -31,10 +31,10 @@ SITE_PROTOCOL = "https://"
 YA_OAUTH_URL = "https://www.yellowant.com/api/oauth2/authorize/"
 YA_APP_ID = str(data_json['application_id'])
 
-YELLOWANT_CLIENT_ID = str(data_json['client_id'])
-YELLOWANT_CLIENT_SECRET = str(data_json['client_secret'])
-YELLOWANT_VERIFICATION_TOKEN = str(data_json['verification_token'])
-YELLOWANT_REDIRECT_URL = BASE_URL + "yellowantredirecturl/"
+YA_CLIENT_ID = str(data_json['client_id'])
+YA_CLIENT_SECRET = str(data_json['client_secret'])
+YA_VERIFICATION_TOKEN = str(data_json['verification_token'])
+YA_REDIRECT_URL = BASE_URL + "yellowantredirecturl/"
 
 
 DEV_ENV = os.environ.get('ENV', 'DEV')
