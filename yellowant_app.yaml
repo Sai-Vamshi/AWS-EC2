@@ -1,0 +1,417 @@
+api_url: http://cefd30ff.ngrok.io/yellowant-api/
+creator_email: saivamshipavan@gmail.com
+documentation_url: https://yellowant.com/documentation/
+functions:
+  authorize-security-group:
+    function_type: 1
+    input_args:
+      FromPort:
+        arg_type: 1
+        description: The port from which input is accepted.
+        example: '22'
+        name: FromPort
+        required: 1
+      IpRange:
+        arg_type: 14
+        description: The IP range.
+        example: 0.0.0.0/0
+        name: IpRange
+        required: 1
+      Region:
+        arg_type: 14
+        description: Region Name
+        example: us-east-1
+        name: Region
+        required: 1
+      Security-group-ID:
+        arg_type: 14
+        description: The name of the Security group
+        example: sg-dc5f99b6
+        name: Security-group-ID
+        required: 1
+      ToPort:
+        arg_type: 1
+        description: The port till which input is taken
+        example: '80'
+        name: ToPort
+        required: 1
+      protocol:
+        arg_type: 14
+        description: The type of protocol
+        example: tcp
+        name: protocol
+        required: 1
+    invoke_name: authorize-security-group
+    is_active: 1
+    max_retries: 0
+    name: Authorize Security Group-Ingress
+    output_keys: {}
+    privacy_mode: 0
+    rate_limited: 0
+    short_description: For changing the authorization settings for security  group.
+    user_rate_limit: 0.0
+  authorize-security-group-regress:
+    function_type: 1
+    input_args:
+      FromPort:
+        arg_type: 1
+        description: The port from which input is accepted.
+        example: '22'
+        name: FromPort
+        required: 1
+      IpRange:
+        arg_type: 14
+        description: The IP range.
+        example: 0.0.0.0/0
+        name: IpRange
+        required: 1
+      Region:
+        arg_type: 14
+        description: Region Name
+        example: us-east-1
+        name: Region
+        required: 1
+      Security-group-ID:
+        arg_type: 14
+        description: The name of the Security group
+        example: sg-dc5f99b6
+        name: Security-group-ID
+        required: 1
+      ToPort:
+        arg_type: 1
+        description: The port till which input is taken
+        example: '22'
+        name: ToPort
+        required: 1
+      protocol:
+        arg_type: 14
+        description: The type of protocol
+        example: tcp
+        name: protocol
+        required: 1
+    invoke_name: authorize-security-group-regress
+    is_active: 1
+    max_retries: 0
+    name: Authorize Security Group Regress
+    output_keys: {}
+    privacy_mode: 0
+    rate_limited: 0
+    short_description: For changing the authorization settings for security group
+    user_rate_limit: 0.0
+  create-sec-group:
+    function_type: 1
+    input_args:
+      Description:
+        arg_type: 14
+        description: Thye Description of the Security Group
+        example: abcd
+        name: Description
+        required: 1
+      Group-Name:
+        arg_type: 14
+        description: The name of the Group where Security group is to be created
+        example: launch wizard-1
+        name: Group-Name
+        required: 1
+      Region:
+        arg_type: 14
+        description: Region where Security gruops are created
+        example: us-east-1
+        name: Region
+        required: 1
+    invoke_name: create-sec-group
+    is_active: 1
+    max_retries: 0
+    name: Create Security Group
+    output_keys: {}
+    privacy_mode: 0
+    rate_limited: 0
+    short_description: Creates a new security group in AWS-EC2
+    user_rate_limit: 0.0
+  delete-security-group:
+    function_type: 1
+    input_args:
+      Region:
+        arg_type: 14
+        description: Region of the Security group
+        example: us-east-1
+        name: Region
+        required: 1
+      Security-group-ID:
+        arg_type: 14
+        description: The security group ID of the function
+        example: sg-1fbc7375
+        name: Security-group-ID
+        required: 1
+    invoke_name: delete-security-group
+    is_active: 1
+    max_retries: 0
+    name: Delete Security Group
+    output_keys: {}
+    privacy_mode: 0
+    rate_limited: 0
+    short_description: Deletes the security group
+    user_rate_limit: 0.0
+  desc-security-group:
+    function_type: 1
+    input_args:
+      Region:
+        arg_type: 14
+        description: Region of the Security group
+        example: us-east-1
+        name: Region
+        required: 1
+      Security-group-ID:
+        arg_type: 14
+        description: The Security group ID for which description is required.
+        example: sg-4e7b8024
+        name: Security-group-ID
+        required: 1
+    invoke_name: desc-security-group
+    is_active: 1
+    max_retries: 0
+    name: Describe Security Groups
+    output_keys: {}
+    privacy_mode: 0
+    rate_limited: 0
+    short_description: Describes the security Groups
+    user_rate_limit: 0.0
+  health-status:
+    function_type: 1
+    input_args:
+      Region:
+        arg_type: 14
+        description: Region of the Instances.
+        example: us-east-1
+        name: Region
+        required: 1
+    invoke_name: health-status
+    is_active: 1
+    max_retries: 0
+    name: Health Status
+    output_keys: {}
+    privacy_mode: 0
+    rate_limited: 0
+    short_description: To get scheduled maintenance information for your running instances
+    user_rate_limit: 0.0
+  new-instance:
+    function_type: 1
+    input_args:
+      Image-ID:
+        arg_type: 14
+        description: Input the Image on which instance needs to be created.
+        example: ami-57d3e732
+        name: Image-ID
+        required: 1
+      Region:
+        arg_type: 14
+        description: Region of the Instance
+        example: us-east-1
+        name: Region
+        required: 1
+    invoke_name: new-instance
+    is_active: 1
+    max_retries: 0
+    name: Launch New Instance
+    output_keys: {}
+    privacy_mode: 0
+    rate_limited: 0
+    short_description: Launch new instances  in AWS-EC2
+    user_rate_limit: 0.0
+  region:
+    function_type: 1
+    input_args: {}
+    invoke_name: region
+    is_active: 0
+    max_retries: 0
+    name: Region
+    output_keys:
+      _keys:
+        list: '[list]:   List of List'
+      list:
+        Region_Name: '__unicode:   List  region  names'
+    privacy_mode: 0
+    rate_limited: 0
+    short_description: Shows all the regions
+    user_rate_limit: 0.0
+  revoke-security-group-egress:
+    function_type: 1
+    input_args:
+      FromPort:
+        arg_type: 1
+        description: The port from which input is accepted.
+        example: '22'
+        name: FromPort
+        required: 1
+      IpRange:
+        arg_type: 14
+        description: The IP range.
+        example: 0.0.0.0/0
+        name: IpRange
+        required: 1
+      Region:
+        arg_type: 14
+        description: Region Name
+        example: us-east-1
+        name: Region
+        required: 1
+      Security-group-ID:
+        arg_type: 14
+        description: The group ID
+        example: sg-4e7b8024
+        name: Security-group-ID
+        required: 1
+      ToPort:
+        arg_type: 1
+        description: The port till which input is taken
+        example: '22'
+        name: ToPort
+        required: 1
+      protocol:
+        arg_type: 14
+        description: The type of protocol
+        example: tcp
+        name: protocol
+        required: 1
+    invoke_name: revoke-security-group-egress
+    is_active: 1
+    max_retries: 0
+    name: Revoke Security Group Egress
+    output_keys: {}
+    privacy_mode: 0
+    rate_limited: 0
+    short_description: To revoke security group egress
+    user_rate_limit: 0.0
+  revoke-security-group-ingress:
+    function_type: 1
+    input_args:
+      FromPort:
+        arg_type: 1
+        description: The Port from which Security group should be revoked
+        example: '25'
+        name: FromPort
+        required: 1
+      IpRange:
+        arg_type: 14
+        description: The IP ranges which are revoked
+        example: 0.0.0.0/0
+        name: IpRange
+        required: 1
+      Region:
+        arg_type: 14
+        description: Region Name
+        example: us-east-1
+        name: Region
+        required: 1
+      Security-group-ID:
+        arg_type: 14
+        description: The name of the Security group
+        example: sg-4e7b8024
+        name: Security-group-ID
+        required: 1
+      ToPort:
+        arg_type: 1
+        description: The Port to which Security group should be revoked
+        example: '80'
+        name: ToPort
+        required: 1
+      protocol:
+        arg_type: 14
+        description: The IP protocol
+        example: tcp
+        name: protocol
+        required: 1
+    invoke_name: revoke-security-group-ingress
+    is_active: 1
+    max_retries: 0
+    name: Revoke Security Group Ingress
+    output_keys: {}
+    privacy_mode: 0
+    rate_limited: 0
+    short_description: To revoke security group ingress
+    user_rate_limit: 0.0
+  running-instances:
+    function_type: 1
+    input_args:
+      Region:
+        arg_type: 14
+        description: Region of the Instance
+        example: us-east-1
+        name: Region
+        required: 1
+    invoke_name: running-instances
+    is_active: 1
+    max_retries: 0
+    name: Running Instances
+    output_keys:
+      _keys:
+        list: '[list]:    List of List'
+      list:
+        Running_Instances: '__unicode:    Running Instances'
+    privacy_mode: 0
+    rate_limited: 0
+    short_description: Checking What Instances Are Running.
+    user_rate_limit: 0.0
+  start-instance:
+    function_type: 1
+    input_args:
+      Instance-ID:
+        arg_type: 14
+        description: The Instance ID of the Instance which is to be started.
+        example: i-0622c269343689028
+        name: Instance-ID
+        required: 1
+      Region:
+        arg_type: 14
+        description: Region of the Instance
+        example: us-east-1
+        name: Region
+        required: 1
+    invoke_name: start-instance
+    is_active: 1
+    max_retries: 0
+    name: Start Instance
+    output_keys: {}
+    privacy_mode: 0
+    rate_limited: 0
+    short_description: To start an Instance
+    user_rate_limit: 0.0
+  stop-instance:
+    function_type: 1
+    input_args:
+      Instance-ID:
+        arg_type: 14
+        description: Instance-ID of the Instance to be deleted.
+        example: i-0e9b95d7552c3086c
+        name: Instance-ID
+        required: 1
+      Region:
+        arg_type: 14
+        description: Region of the Instance
+        example: us-east-1
+        name: Region
+        required: 1
+    invoke_name: stop-instance
+    is_active: 1
+    max_retries: 0
+    name: Stop Instance
+    output_keys: {}
+    privacy_mode: 0
+    rate_limited: 0
+    short_description: To stop an instance which is running on AWS-EC2
+    user_rate_limit: 0.0
+icon_url: https://cdn.worldvectorlogo.com/logos/aws-ec2.svg
+install_page_url: https://yellowant.com/install/
+invoke_name: awsec2
+is_active: 1
+is_production_or_sandbox: 0
+long_description: ''
+name: AWS-EC2
+privacy_policy_url: https://yellowant.com/privacy/
+rate_limit: 0.0
+rate_limited: 0
+redirect_uris: http://cefd30ff.ngrok.io/yellowant-oauth-redirect/
+short_description: For getting the information about instances
+user_rate_limit: 0.0
+visibility_scope: 1
+website: https://yellowant.com/install/
